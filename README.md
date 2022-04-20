@@ -4,13 +4,13 @@ What did you like about this project?
 
 I like that it was quite challenging trying to use flexbox with HTML and CSS only to make the webpage without bootstrap.
 
-
+<br>
 
 What did you struggle with in this project?
 
 The part I struggle a lot was trying to get the optimize the padding/margin.
 
-
+<br>
 
 What would make your experience with this assessment better?
 
