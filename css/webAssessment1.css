@@ -1,0 +1,397 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    color: #989898;
+    font-size: 16px;
+}
+
+h1 { font-size: 30px; font-weight: bold; color:#4f4f4f;}
+h2 { font-size: 24px; color:#4f4f4f;}
+h3 { font-size: 22px; color:#4f4f4f;}
+h4 { font-size: 20px; color:#4f4f4f;}
+h5 { font-size: 18px; color:#4f4f4f;}
+
+
+/* Header Section */
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    padding-left: 24px;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: 24px;
+}
+
+.nav > a {
+    color: #4F4F4F;
+    text-decoration: none;
+    padding-left: 16px;
+}
+
+/* Hiding Mobile Section */
+.mobileview {
+    display: none;
+}
+
+.ssMobile {
+    display: none;
+}
+
+/* First Section */
+.firstSection {
+    display: flex;
+    align-items: center;
+    background-color: #c5c3c3;
+}
+
+.fsSide {
+    width: 40%;
+}
+
+.firstSection img {
+    padding: 32px 24px;
+    width: 60%;
+}
+
+.fsSide h1 {
+    padding-bottom: 16px;
+}
+
+.fsSide h4 {
+    padding-bottom: 8px;
+}
+
+.fsSide button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 60%;
+    color: white;
+    background-color: rgb(55, 55, 55);
+}
+
+/* Section Second */
+.secondSection {
+    display: flex;
+}
+
+.ssLeft {
+    width: 60%;
+    padding: 32px 24px;
+}
+
+.ssLeft img {
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 32px;
+}
+
+.ssLeft p {
+    padding: 24px 0px;
+}
+
+.ssRight {
+    width: 40%;
+    padding: 16px 24px;
+}
+
+.ssRight img {
+    width: 35%;
+    height: auto;
+    padding: 16px;
+}
+
+.ssBox {
+    display: flex;
+}
+
+.ssBoxText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+}
+
+.ssBox3 {
+    background-color: #c5c3c3;
+}
+
+.ssBoxText h3 {
+    padding-bottom: 10px;
+}
+
+.ssBoxText p {
+    padding-bottom: 5px;
+}
+
+.ssBoxText a {
+    color: rgb(75, 75, 255);
+    text-decoration: none;
+}
+
+/* Third Section */
+.thirdSection {
+    background-color: #c5c3c3;
+}
+
+.thirdSection h2 {
+    text-align: center;
+    padding-top: 32px
+}
+
+.tsGroup {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-left: 72px;
+    padding-right: 72px;
+}
+
+.tsBox {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 30%;
+    margin-bottom: 32px;
+}
+
+.tsBox img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tsBox h4 {
+    padding: 16px;
+}
+
+.tsBox .p1 {
+    padding-left: 16px;
+    padding-bottom: 16px;
+}
+
+.tsBox .p2 {
+    padding-left: 16px;
+    padding-bottom: 24px;
+}
+
+/* Fourth Section */
+.fourthSection h2 {
+    text-align: center;
+    padding: 32px 0px;
+}
+
+.fsBody {
+    display: flex;
+}
+
+.fsLeft {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.fsLeft video {
+    width: 100%;
+    height: 100%;
+    padding: 0px 24px 24px 24px;
+}
+
+.fsRight {
+    width: 40%;
+}
+
+.fsLeftText {
+    padding: 0px 0px 32px 24px;
+}
+
+.fsLeftText h3 {
+    padding-bottom: 15px;
+}
+
+.fsBox {
+    display: flex;
+}
+
+.fsBox img {
+    width: 35%;
+    height: auto;
+    padding: 16px;
+}
+
+.fsBoxText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    border-top: 1px solid #c5c3c3;
+    padding: 16px 24px;
+}
+
+.footerNav {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footerNav a {
+    text-decoration: none;
+    padding-left: 10px;
+    color: #989898;
+}
+
+/* Mobile Version */
+@media screen and (max-width: 720px) {
+
+    /* Header Nav Bar */
+    .logo, .nav {
+        display: none;
+    }
+    .mobileview {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* Mobile First Section */
+    .firstSection {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .firstSection img {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .fsSide h1 {
+        padding: 16px 0px;
+    }
+
+    .fsSide {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fsSide h4 {
+        padding-bottom: 8px;
+    }
+
+    .fsSide button {
+        margin-bottom: 32px;
+        width: 40%;
+    }
+
+    /* Mobile Second Section */
+    .ssLeft {
+        display: none;
+    }
+
+    .ssRight {
+        display: none;
+    }
+
+    .ssMobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 32px;
+    }
+
+    .ssBoxText {
+        padding: 16px;
+        width: 100%;
+    }
+
+    .ssBoxText a {
+        padding-bottom: 32px;
+    }
+
+    /* Mobile Third Section */
+    .thirdSection {
+        background-color: white;
+        padding: 0px 72px 32px 72px;
+    }
+
+    .thirdSection h2 {
+        padding-top: 0px; 
+    }
+
+    .tsBox img, .tsBox p {
+        display: none;
+    }
+
+    .tsGroup {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        padding-top: 16px;
+    }
+
+    .tsBox {
+        background-color: #c5c3c3;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .tsBox h4 {
+        padding: 16px 0px;
+    }
+
+    /* Mobile Fourth Section */
+    .fourthSection h2 {
+        padding-top: 16px;
+    }
+
+    .fsRight {
+        display: none;
+    }
+
+    .fsLeft {
+        width: 100%;
+    }
+
+    .fsLeftText {
+        display: none;
+    }
+
+    .fsLeft video {
+        width: 100%;
+        height: auto;
+        padding: 0px 0px 32px 0px;
+    }
+
+    /* Mobile Footer */
+    footer {
+        padding: 16px;
+    }
+}
